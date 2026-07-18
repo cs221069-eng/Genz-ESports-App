@@ -1,2 +1,4 @@
-# Keep backend files local
-backend/
+# Keep backend environment secrets local
+backend/.env
+backend/.env.*
+!backend/.env.example
