@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GenZ eSports - Pro Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#6f3800",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed-variant": "#004786",
+                    "on-secondary-container": "#003567",
+                    "on-primary-fixed": "#001c38",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#dbdad9",
+                    "on-surface": "#1b1c1c",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdcc4",
+                    "on-secondary-fixed": "#001c3a",
+                    "background": "#fbf9f9",
+                    "surface-container": "#efeded",
+                    "on-primary-container": "#fdfcff",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#707783",
+                    "inverse-surface": "#303031",
+                    "inverse-primary": "#a2c9ff",
+                    "primary-container": "#0077ce",
+                    "surface-tint": "#0060a8",
+                    "on-surface-variant": "#404752",
+                    "surface-variant": "#e3e2e2",
+                    "surface-container-highest": "#e3e2e2",
+                    "inverse-on-surface": "#f2f0f0",
+                    "surface-bright": "#fbf9f9",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb780",
+                    "on-tertiary-fixed": "#2f1400",
+                    "tertiary-container": "#b35e00",
+                    "tertiary": "#8f4a00",
+                    "secondary": "#005faf",
+                    "primary-fixed-dim": "#a2c9ff",
+                    "secondary-fixed-dim": "#a5c8ff",
+                    "surface-container-low": "#f5f3f3",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c0c7d4",
+                    "on-tertiary-container": "#fffbff",
+                    "primary-fixed": "#d3e4ff",
+                    "secondary-container": "#54a0fe",
+                    "secondary-fixed": "#d4e3ff",
+                    "primary": "#005ea4",
+                    "surface-container-high": "#e9e8e7",
+                    "on-primary-fixed-variant": "#004881",
+                    "on-background": "#1b1c1c",
+                    "surface": "#fbf9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "xl": "32px",
+                    "sm": "8px",
+                    "lg": "24px",
+                    "md": "16px",
+                    "margin-mobile": "16px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface pb-24">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant flex justify-between items-center px-margin-mobile h-12">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="sports_esports">sports_esports</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">GENZ eSPORTS</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="active:scale-95 transition-transform text-on-surface-variant relative">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-error ring-2 ring-surface"></span>
+</button>
+</div>
+</header>
+<main class="pt-12">
+<!-- Hero Banner -->
+<section class="px-margin-mobile pt-md">
+<div class="relative w-full h-48 rounded-lg overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A professional eSports arena stage with a massive digital screen displaying a world championship trophy. The lighting is clean white and bright blue, featuring professional stadium seating and a sleek, modern corporate aesthetic. High-fidelity textures and a sense of grand competitive intensity are captured in a bright, daylight-balanced environment without neon or sci-fi elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByWEZitEWrb5kGXw3q5sgN-O8j-JwQYj60PRPs2DAWcKgCQXlRfFGfDRXWxXb4TThi2mfTEjLD0RtESU177RBucc1koxb7GHexo2e3sN1TXm7Aj8mvp24OMcppIrUGcpfjQFH1JGk8AxuhFixlGi9Bm_h_ovlRMIzLt2pwwHyzUwCkmXlGVKmyiBTUJEzJzI0lzplaHFMjEFwDt2ZyIhYxJRte53UV4JlFx7hRyouygvMnBjOyLaD0imW1i_3eyowfws3EB-uaBW6x"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex flex-col justify-center px-md">
+<span class="bg-on-primary-container text-primary font-label-md text-label-md px-2 py-0.5 rounded-full w-fit mb-2">SEASON FINAL</span>
+<h1 class="text-on-primary font-headline-md text-headline-md font-bold max-w-[200px]">World Championship 2024</h1>
+<p class="text-on-primary/90 font-label-sm text-label-sm mt-1">Streaming Live October 24th</p>
+</div>
+</div>
+</section>
+<!-- Quick Actions -->
+<section class="px-margin-mobile mt-lg grid grid-cols-3 gap-sm">
+<div class="bg-surface border border-outline-variant rounded-lg p-sm flex flex-col items-center justify-center text-center shadow-sm active:scale-95 transition-transform">
+<div class="h-10 w-10 bg-primary-container/10 text-primary rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Create Tournament</span>
+</div>
+<div class="bg-surface border border-outline-variant rounded-lg p-sm flex flex-col items-center justify-center text-center shadow-sm active:scale-95 transition-transform">
+<div class="h-10 w-10 bg-primary-container/10 text-primary rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined" data-icon="sports">sports</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Join Tournament</span>
+</div>
+<div class="bg-surface border border-outline-variant rounded-lg p-sm flex flex-col items-center justify-center text-center shadow-sm active:scale-95 transition-transform">
+<div class="h-10 w-10 bg-primary-container/10 text-primary rounded-full flex items-center justify-center mb-2">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">My Teams</span>
+</div>
+</section>
+<!-- Popular Games -->
+<section class="mt-lg">
+<div class="px-margin-mobile flex justify-between items-center mb-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Popular Games</h2>
+<button class="text-primary font-label-md text-label-md">See All</button>
+</div>
+<div class="flex gap-md overflow-x-auto px-margin-mobile no-scrollbar">
+<div class="flex-shrink-0 flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full border-2 border-primary p-0.5 overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="A clean, realistic character portrait from a tactical battle royale game. The aesthetic is high-detail 3D rendering with natural lighting and a neutral grey background. Professional athletic corporate style with sharp focus and clear colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANarXv86HVJ2Ui7QLPQhHJtkdVV1QQ8x45Xw3rFNE5AwQOaHWtBXmtXWroqyqclekhpcnDlXX5Gw9UTh1HHsRFRhz4e00jb-BMwQcf2XFawnUR-CIjESqQXff-YqIBtABt2XeAGIeBDHZl4rba7GMjovKQJajDXqG78YyZCqIFG5yRijLvXZc6obg8YI-Q86YaYz1KK-vba2w6LD2rvBiGJElXqklLrHJ5zMKSYL2f6GdyQdlJ8uPGfPJhXgaSopcHNv6OS5AdKde1"/>
+</div>
+<span class="font-label-md text-label-md">PUBG</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full border border-outline-variant p-0.5 overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="A tactical shooter game icon featuring a stylized character profile in high-contrast light blue and white. The artwork is professional, modern, and vector-aligned with a bright corporate eSports aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXJ3will_AsL94FR6vMXt_LNiFWSUO4HhSl6DdG6cAj-i5LXeoMzE7rlrPeE7IYyulSvPdloywugYZ63iTFpm0Q8MbvyjiwrJLJIMDIsHawFIQrxzfsZiX7R_08Fd2pfyABpNQ8gos3kxc7Fbv3iWQtwm7LXSl61tQr4wBhKFTsdkvXBwwyRPFwEjuYv9PRW8wejF2QGzJCJmxUHj5QuqN_ZM1LW-g4Pg74x0x5cTnJ-s9TcFjNkluyvJrhUu3ekivyImC3MZ3zqIr"/>
+</div>
+<span class="font-label-md text-label-md">Valorant</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full border border-outline-variant p-0.5 overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="A close-up of a professional soccer ball on a high-resolution grass pitch under bright stadium lighting. The style is clean, athletic, and realistic with vibrant greens and professional sports photography depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHOf7XGcMiJZJUhx2_KBZrMemeFbMr9rOS1zIpPylkeUuPVN3lq8IAxczsQpfw8MV7LfK6JnsjilVf9mLXpPf9y4FZ2HP8_FQ5M00t3Xq1O9tImCp9GO-ul0i00LHYnGZY4svPqF23GmO4U3DzDr9Z3BCRU25b4-UqfUO5PKOmgqVDINJNK3zmB6ThDONv5Oz7-u5oqplb00Yk12FE_PgA-HxMmHEmr3txstjhSwSuKviaKHIiRE7cClsxupe7qUveqadnD1ClCI_v"/>
+</div>
+<span class="font-label-md text-label-md">FIFA</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full border border-outline-variant p-0.5 overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="A detailed military helmet and goggles reflecting a bright daytime environment. The rendering is ultra-realistic with metal and glass textures, presented in a clean and professional corporate eSports frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKQjKZ3FLMmAGhOfxLchOaY3hRJpvpf16x8UYoUpl4A6C8-IZxYRwwImAt8hnjSDwDf2rBWKDbx-P7QMsbVEDdeUnaCaT54_HVVx8eb6kI8kGjfOPRWtMWJeDB7tTCtz2k_3y-BxkpgYC6ethEYjz-EkKyTLCBTawtlG_uidHc5zzydaSrF2CbpW3ceUsqEIrpiqwE00oQYB8-BwMZ6FRY29ntO4d5Y0I5WamwSyqmMTMsV6PWvGdXYiYAa35f3NIU6B08-uSfcE1n"/>
+</div>
+<span class="font-label-md text-label-md">COD</span>
+</div>
+<div class="flex-shrink-0 flex flex-col items-center gap-2">
+<div class="w-16 h-16 rounded-full border border-outline-variant p-0.5 overflow-hidden">
+<img class="w-full h-full object-cover rounded-full" data-alt="A sleek character from a sci-fi tactical shooter presented in a professional studio setting with clean white lighting. The design focus is on clarity, shape, and a bright blue-accented palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOgx8XS9mx4VF-hRn8XOhEJFe0hFpoI6Zd3UKiT7bf3j40BC-UzwblGeeiI8ZSX8VWfMpBkUNRNTmPC-uSEYScwlRg_C57GzGbfLSpfN_aLjxbltnq47q1l9JsHzxq45R94j6Xnm9BtuvJcKDuDaw_0yWqbnduBMVwh4BLOF7T6GBvL1FYQ9q-8NOGb5CIYAPfPea9He_EA04eBXIv5kfs-dXlA890Ud_tLhL84PoGe-eXks50pfO_q_WKE2Hy3DXQmYLicDRCgfy8"/>
+</div>
+<span class="font-label-md text-label-md">Apex</span>
+</div>
+</div>
+</section>
+<!-- Live Streams -->
+<section class="mt-lg">
+<div class="px-margin-mobile flex justify-between items-center mb-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Streams</h2>
+<button class="text-primary font-label-md text-label-md">Explore</button>
+</div>
+<div class="flex gap-md overflow-x-auto px-margin-mobile no-scrollbar">
+<div class="flex-shrink-0 w-64 bg-surface rounded-lg shadow-sm overflow-hidden border border-outline-variant">
+<div class="relative h-36">
+<img class="w-full h-full object-cover" data-alt="A professional gamer's perspective of a high-stakes competitive match. The interface is clean and sharp, shown on a high-resolution monitor in a bright, modern room with natural daylight. No neon lights, just professional corporate gaming setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRDjwtkZqNMn74dC1K6V95yN37eM-p_9P5cw08IAw-_6qyWjEVan_6ZraoiQHnvviu07UQ51HwsQD3mX9tJBDTKH97feUW9cQIg7N-DZnNY9Ars-XwF3XfdgT_JaSvsiynTysz8tinqnFYVtBp415CN6WExe1wimSj5Va_OuKGbBHNXxEOVCKe2IUynfX_c69pdHX94G8VhgqyIWh7vHAULX8nJqjlBDfSjj8FiuCRtBLH4Vuy2YrBsDExWYhkAf30JCv12Py98uyv"/>
+<div class="absolute top-2 left-2 flex items-center gap-1 bg-error text-on-error px-2 py-0.5 rounded text-[10px] font-bold">
+<span class="w-1.5 h-1.5 bg-white rounded-full"></span> LIVE
+                        </div>
+<div class="absolute bottom-2 right-2 bg-on-surface/60 text-white px-2 py-0.5 rounded font-label-sm text-label-sm">
+                            12.4K Viewers
+                        </div>
+</div>
+<div class="p-md flex gap-2">
+<div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a young eSports player with a friendly and focused expression. The person is wearing a clean white team jersey. The background is a soft, blurred studio grey with professional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRFJZkOolgPuAwvU4x677Y_6eVw69nl9RcARiExb_xSLpspvXV5crgGQJD1ZTMPMKWrMOUv_CzTCS8tOaXbeglmD7ux5mO3t9uBwt0jrM_Rzv5Is60DfVnRWkhHEcMDIkvP4YHmlaF0hOozi5fQ3vfxuq3A4rZNYK59bZVVGOUl3SX-eGHwA3bpv0l5q0OYxOBYtgiPJHtETnL7tTz4J08dYKg4uwn7g_ESgUf1E8O1isMTPmY5oe4ui_olacPutXm64Z9_c5hAHIK"/>
+</div>
+<div class="overflow-hidden">
+<h3 class="font-label-md text-label-md text-on-surface truncate">Apex Legends Global Qualifiers</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Streamer_Alpha</p>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 w-64 bg-surface rounded-lg shadow-sm overflow-hidden border border-outline-variant">
+<div class="relative h-36">
+<img class="w-full h-full object-cover" data-alt="High-definition soccer gameplay shown on a premium display. The field is bright green, the players are detailed, and the broadcast graphics are clean and modern. The overall vibe is professional sports broadcasting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRARA90kiYbhNTB_QQtUgr_23kKhRuGUUJ0e8ma6JHHzzRaxlIOZgv2zevnrtj-2fYdAugpd7MaQEMcVtQQfJslzZ8dQygOUUzd92nBsK8I_evhvEnhpnsJLzj4NS06t2HhSRaFViOsyyrjN968GlpozW2RkJbnJ_kqQ1Ew_kWc0i6jyvjQNGzyiyfyPdkJVw87Oh8rMs1Uxzc-Ebe2wsovDii3IJlphSayAMvD3uPzGjzz_WjSxINnwpBss7jVFt1IcsVbSkvl6eW"/>
+<div class="absolute top-2 left-2 flex items-center gap-1 bg-error text-on-error px-2 py-0.5 rounded text-[10px] font-bold">
+<span class="w-1.5 h-1.5 bg-white rounded-full"></span> LIVE
+                        </div>
+<div class="absolute bottom-2 right-2 bg-on-surface/60 text-white px-2 py-0.5 rounded font-label-sm text-label-sm">
+                            8.1K Viewers
+                        </div>
+</div>
+<div class="p-md flex gap-2">
+<div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A corporate-style headshot of an eSports commentator. They are wearing a sharp blue blazer and a white shirt. The lighting is clean and bright, reflecting a professional studio atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyHc9ZvNjACN1qeTsR7WWFtqWomZ2A_mS2W8UFF0R9Sk0kSNBsPtK-h7crxSbEkDQySlCd5Oo6JM-YwQbu6KInQwtHcBWcZYmtdnsaua-XwvcvRW0v-JXaLa74cpGxFPUHEz6kzJjFrFqoRaZDBUllhFAFjeNJMTp9SM0rQqrhuXGl8fNveVQV3Aoj2ehI8l6yFufsk-qNTmiquN4l99B0LUROsv7boaJnyBy_vJ0MOEqvvOFRHFXPgd6NEATjAdj2UhvDa3fzTATc"/>
+</div>
+<div class="overflow-hidden">
+<h3 class="font-label-md text-label-md text-on-surface truncate">FIFA Pro Masters Finals</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">SoccerPro_TV</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Upcoming Events -->
+<section class="mt-lg px-margin-mobile">
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-md">Upcoming Events</h2>
+<div class="space-y-md">
+<!-- Event Card 1 -->
+<div class="bg-surface rounded-lg border border-outline-variant shadow-sm overflow-hidden flex flex-col">
+<div class="relative h-24">
+<img class="w-full h-full object-cover" data-alt="A professional banner featuring an eSports trophy on a clean, modern geometric background with shades of primary blue and white. The composition is structured and balanced, following an 8px grid system for a premium corporate feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwqFfB19u3DgfmCdCZPTvOoFzXjQg36D52vtHw_5-jf9fxU0TLGM8l9r0T7OsN08nvAkFu2tu3gVHCnugIB7KDWwZPh7GOSglW14pYGCSdAlzCBDt2KqOA4JFlOMM2fZCmwp6ZlFH60wvwXq7zYcsh-pEfnfRBSfHdrf_R8qAzEufG9a_T9dtnNJeQImgxZwI6CzzvmTmx3tsG8cUqboGadbFyJkBmD9VM5DnfaGNxD0BaBKGyrbmWR0-8B58Hj_gquXRPu1gRO553"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="p-md">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Apex Legends Global</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="calendar_today">calendar_today</span>
+                                    Tomorrow, 18:00 GMT
+                                </p>
+</div>
+<div class="bg-surface-container-low px-2 py-1 rounded text-primary font-label-md text-label-md">
+                                $5,000 Prize
+                            </div>
+</div>
+<div class="flex items-center justify-between mt-md pt-md border-t border-outline-variant">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-variant"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-variant"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-variant"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">128/256 Joined</span>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-lg py-sm rounded-lg active:scale-90 transition-all shadow-sm">Join Now</button>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-surface rounded-lg border border-outline-variant shadow-sm overflow-hidden flex flex-col">
+<div class="relative h-24">
+<img class="w-full h-full object-cover" data-alt="A tactical shooter game tournament banner with clean lines and high-contrast typography. The image shows a realistic 3D game environment under bright daylight, framed with professional corporate branding elements in blue and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2nnlWW1U1QyRcydKmCBS-7yNBbBF_dSorWezkkz6I-K402XDEC4gG-pk7mW8EP4Euk1JPynnZG_F4AjHH5iAg4vZt4U453Q4aIfE7y2tyfZh6b58BevGLkFVBF_zYEHeCXdo6YOJB7lew55c4n27ta-z1vDQSqZ8exunvlvIApw8NH3rCbQ67I8i-oBNpY1whidxO3wWWQqwjsINFa0mSpTkgfOK6ohsQpcxJVCN3d4lNdqIIRFfpEc5GjMCzgBY1A3erygtjO3M8"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="p-md">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Valorant Strike Cup</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="calendar_today">calendar_today</span>
+                                    Oct 26, 20:00 GMT
+                                </p>
+</div>
+<div class="bg-surface-container-low px-2 py-1 rounded text-primary font-label-md text-label-md">
+                                $2,500 Prize
+                            </div>
+</div>
+<div class="flex items-center justify-between mt-md pt-md border-t border-outline-variant">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-variant"></div>
+<div class="w-6 h-6 rounded-full border-2 border-surface bg-surface-variant"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">64/64 Full</span>
+</div>
+<button class="bg-outline-variant text-on-surface-variant font-label-md text-label-md px-lg py-sm rounded-lg cursor-not-allowed">Full</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface border-t border-outline-variant shadow-sm flex justify-around items-center h-16 px-2">
+<button class="flex flex-col items-center justify-center text-primary font-bold active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="emoji_events">emoji_events</span>
+<span class="font-label-sm text-label-sm mt-1 text-outline">Tournaments</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label-sm text-label-sm mt-1 text-outline">Shop</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="live_tv">live_tv</span>
+<span class="font-label-sm text-label-sm mt-1 text-outline">Live</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm mt-1 text-outline">Profile</span>
+</button>
+</nav>
+</body></html>

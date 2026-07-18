@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#fbf9f9",
+                      "primary-fixed": "#d3e4ff",
+                      "on-surface": "#1b1c1c",
+                      "secondary-fixed": "#d4e3ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-highest": "#e3e2e2",
+                      "surface-tint": "#0060a8",
+                      "secondary-container": "#54a0fe",
+                      "tertiary": "#8f4a00",
+                      "secondary": "#005faf",
+                      "on-surface-variant": "#404752",
+                      "on-secondary-fixed": "#001c3a",
+                      "primary-fixed-dim": "#a2c9ff",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#a2c9ff",
+                      "surface-dim": "#dbdad9",
+                      "surface-variant": "#e3e2e2",
+                      "on-secondary-container": "#003567",
+                      "on-primary": "#ffffff",
+                      "primary-container": "#0077ce",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#b35e00",
+                      "on-tertiary-fixed": "#2f1400",
+                      "secondary-fixed-dim": "#a5c8ff",
+                      "primary": "#005ea4",
+                      "on-primary-fixed": "#001c38",
+                      "on-tertiary-container": "#fffbff",
+                      "on-primary-container": "#fdfcff",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#ffdcc4",
+                      "surface-container-high": "#e9e8e7",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#fbf9f9",
+                      "on-primary-fixed-variant": "#004881",
+                      "surface-container-low": "#f5f3f3",
+                      "inverse-on-surface": "#f2f0f0",
+                      "background": "#fbf9f9",
+                      "outline": "#707783",
+                      "on-secondary-fixed-variant": "#004786",
+                      "outline-variant": "#c0c7d4",
+                      "tertiary-fixed-dim": "#ffb780",
+                      "surface-container": "#efeded",
+                      "inverse-surface": "#303031",
+                      "on-background": "#1b1c1c",
+                      "on-secondary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#6f3800"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "16px",
+                      "md": "16px",
+                      "margin-mobile": "16px",
+                      "sm": "8px",
+                      "lg": "24px",
+                      "xl": "32px",
+                      "xs": "4px"
+              },
+              "fontFamily": {
+                      "headline-sm": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "label-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+                      "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant flex justify-between items-center px-margin-mobile h-12 w-full">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="sports_esports">sports_esports</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">PRO-SERIES</span>
+</div>
+<button class="active:scale-95 transition-transform hover:bg-surface-container-low p-2 rounded-full">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="search">search</span>
+</button>
+</header>
+<main class="pt-12 pb-20">
+<!-- Search Section -->
+<div class="px-margin-mobile py-lg">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-4 text-outline" data-icon="search">search</span>
+<input class="w-full h-12 pl-12 pr-4 bg-surface-container-lowest border border-outline-variant rounded-lg focus:outline-none focus:border-primary text-body-md font-body-md placeholder-outline" placeholder="Search for gear..." type="text"/>
+</div>
+</div>
+<!-- Category Filters -->
+<div class="flex overflow-x-auto hide-scrollbar gap-sm px-margin-mobile mb-lg">
+<button class="px-lg h-9 bg-primary text-on-primary rounded-full font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform">PS5</button>
+<button class="px-lg h-9 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform">Controllers</button>
+<button class="px-lg h-9 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform">Headsets</button>
+<button class="px-lg h-9 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform">Accessories</button>
+<button class="px-lg h-9 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform">Keyboards</button>
+</div>
+<!-- Product Grid -->
+<div class="px-margin-mobile grid grid-cols-2 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0px_2px_4px_rgba(0,0,0,0.05)] flex flex-col">
+<div class="aspect-square bg-[#F5F7F9] flex items-center justify-center p-sm">
+<img class="w-full h-full object-contain" data-alt="A high-resolution studio photograph of a PlayStation 5 console on a clean white background. The lighting is soft and professional, highlighting the sleek white curves and black central unit. The overall aesthetic is minimalist and premium, following a bright light-mode style with crisp clarity and realistic textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgn8GRDOXqV1ErAyaWnpn_pt6EXLsnk7A_KaQGJPKi9VmeyQv4QYKWUYJl67Y-7GNsiFl4hfILd-eBG9bGJ-8vXSYe2G4URRfb69bG8tGWhp9xfP1KuuWv3_BjIKWoWaTpHIgu0sAwjWcrLiBsPkyzR-y6_qRWPd774_vQhTgy_RZxW5CFjp68LdO5I6W82wU77wg6IjMcZ5do2d5J7OqzN25JV8gx9-vxEqOKiU2Pnn-5xZgB9kPFpquW-5J4W8Kkr-eACCJ4DoOE"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs truncate">PlayStation 5 Console</h3>
+<p class="font-headline-sm text-headline-sm text-primary mb-sm">$499.99</p>
+<button class="w-full h-10 bg-primary text-on-primary rounded font-label-md text-label-md active:scale-95 transition-transform mt-auto">Buy Now</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0px_2px_4px_rgba(0,0,0,0.05)] flex flex-col">
+<div class="aspect-square bg-[#F5F7F9] flex items-center justify-center p-sm">
+<img class="w-full h-full object-contain" data-alt="A detailed close-up shot of a white DualSense wireless controller for PlayStation 5. The image is captured in a bright, modern studio setting with soft shadows that emphasize the ergonomic design and textured grips. The palette is dominated by whites and light greys to maintain a professional, corporate tech feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf6RrDtDKUCu0-dDuBQrcb6lgqOWahsHQjGwL0iHTopSZrzUaUt21hcbszCUDSIV5hW3DeBj6ikk3XVWjTk75T6u0iz8WgcZ4ozYayYj-Y8X0WZZr9CCaBSKdYBRNKUq5s-YmTs1rwSpgDUbCvQPBz9pTWq0d__RIF1deUmpx0a-1tB99EWkBgDB1oM4_hyW-lMGMohFYT5GmS-tJ0Kx70FkSBwPRJQ6ERrLsowOCbZOj6LccaHS89-hmQMcC-hO0toU1adDFN18BM"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs truncate">DualSense Controller</h3>
+<p class="font-headline-sm text-headline-sm text-primary mb-sm">$69.99</p>
+<button class="w-full h-10 bg-primary text-on-primary rounded font-label-md text-label-md active:scale-95 transition-transform mt-auto">Buy Now</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0px_2px_4px_rgba(0,0,0,0.05)] flex flex-col">
+<div class="aspect-square bg-[#F5F7F9] flex items-center justify-center p-sm">
+<img class="w-full h-full object-contain" data-alt="Premium gaming headset with a sleek black and blue finish, displayed on a minimalist grey pedestal. The lighting is bright and directional, showcasing the high-quality leather ear pads and brushed metal accents. The image conveys a sense of high-performance audio gear within a professional eSports context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfu2t6GbWKB8rZ3VvAm5eZMxpxkesKSDF5JCCJeyktAiSdrCiCAsdcAi3MBT_Xy_PswmiQmt8hdsRq9D5KYtrFuHpyrxr-5xgfLqmamITTZoNQwoKEFfrYr0q0PCNOjU88YDs7GmrbzmvOM3ezv7HuOn1EhIwoCsb14U1W5PPBXj2wgkTASCga8RCbC3q8SV9XyXuunXTmf6GhcD4VFIMZRfpWLRhzRCo9ZtbPPWk5VLG3088PYIVE03Liw6AC2o-0pT_S6mG0RIVg"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs truncate">Pro Gaming Headset</h3>
+<p class="font-headline-sm text-headline-sm text-primary mb-sm">$129.00</p>
+<button class="w-full h-10 bg-primary text-on-primary rounded font-label-md text-label-md active:scale-95 transition-transform mt-auto">Buy Now</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0px_2px_4px_rgba(0,0,0,0.05)] flex flex-col">
+<div class="aspect-square bg-[#F5F7F9] flex items-center justify-center p-sm">
+<img class="w-full h-full object-contain" data-alt="A high-end mechanical gaming keyboard featuring subtle RGB lighting in shades of primary blue. The shot is a sharp, low-angle perspective that highlights the premium build quality and keycaps. Set against a clean, light-colored background that emphasizes a professional, athletic corporate workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfHuWWaGt-Fs03_dyvNon9KHYLfubSixhXpe7wICpgHCFENYj3u1NLO22hHuIhiIBFvU63zROuqRVlJXa_mUGD_Vk5oVjxyFu6j0qP6voL-m1RLKHnyUy8dfHHhA4z6EiQl8YcBVyDsR4hD8jnRhFb_djTvXzCXtlNy6ZBM9G5tKZ_9dSE-JqBaBUZGeK_8lfl8GaHlIcFxLwkn8c5d4W8MRyZJKGmfIaWXAD3tW5unDK_foswya4_hkMZLtQj5Msqh-X4s_UbLebe"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs truncate">Mechanical Keyboard</h3>
+<p class="font-headline-sm text-headline-sm text-primary mb-sm">$159.99</p>
+<button class="w-full h-10 bg-primary text-on-primary rounded font-label-md text-label-md active:scale-95 transition-transform mt-auto">Buy Now</button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0px_2px_4px_rgba(0,0,0,0.05)] flex flex-col">
+<div class="aspect-square bg-[#F5F7F9] flex items-center justify-center p-sm">
+<img class="w-full h-full object-contain" data-alt="A professional wireless gaming mouse with a minimalist ergonomic shape. The image is set in a high-key lighting environment with soft shadows, highlighting the matte finish and precision scroll wheel. The style is clean and functional, targeting serious competitive gamers in a professional market app." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJbeaMNZ5FSolwqecnH4Lg3L8NbKycjRYkmvbwOfjvx0nhzrJlWlQLsBafUh7tSG1aSX0xqnYyeuJ3mP4aFLsov-olR6NQLNyjHpM428yh8-87O4E306vfnkEhcN6Q-EwmDY390VX4szfvy0fXQtZqjmLVVNLS5781U6l5xl0c_d2pb17VWxob5tGCe8_2NXkz87Bzbatj22J5sO3dGjCMsHDdBMoWMouJt5im_mfg6tE_r3AuIGVvsivW9csvsNvh6ytJk3SsxgVs"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs truncate">Elite Wireless Mouse</h3>
+<p class="font-headline-sm text-headline-sm text-primary mb-sm">$89.00</p>
+<button class="w-full h-10 bg-primary text-on-primary rounded font-label-md text-label-md active:scale-95 transition-transform mt-auto">Buy Now</button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0px_2px_4px_rgba(0,0,0,0.05)] flex flex-col">
+<div class="aspect-square bg-[#F5F7F9] flex items-center justify-center p-sm">
+<img class="w-full h-full object-contain" data-alt="A high-performance gaming monitor with ultra-thin bezels, displaying a crisp, professional eSports tournament logo. The lighting is soft and even, highlighting the sleek stand and matte screen. The aesthetic is modern and corporate, emphasizing high-utility professional gaming equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2GWHohEJiwZiTcfT4HWtl7HIyW2dvgB1qpP9NNkNgZZWQpRR4882Kt0BO4T8AGdO2xEeKAbInQv3f6hPKHNa34fjzsZgMC9WEl4N3YasFFPIzxqkXT0lqQ1sYRkHsULmJiAniunK_ubhve224g_PTsZrG0G5PSVnHNM3OET1E1rNGf5sM477JOZF077xmZl3ZnpepZDYFmiW3NDLhWC5qY5z_mOOGVvhdlkZOUarE5qEMOlRywGAOR4iAOf6FqaepFMY8kI4zJ7Kv"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-label-md text-on-surface mb-xs truncate">240Hz Gaming Monitor</h3>
+<p class="font-headline-sm text-headline-sm text-primary mb-sm">$349.00</p>
+<button class="w-full h-10 bg-primary text-on-primary rounded font-label-md text-label-md active:scale-95 transition-transform mt-auto">Buy Now</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface border-t border-outline-variant shadow-sm flex justify-around items-center h-16 w-full px-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="emoji_events">emoji_events</span>
+<span class="font-label-sm text-label-sm">Tournaments</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+<span class="font-label-sm text-label-sm">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="live_tv">live_tv</span>
+<span class="font-label-sm text-label-sm">Live</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+</body></html>

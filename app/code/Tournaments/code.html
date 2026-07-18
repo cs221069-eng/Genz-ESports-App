@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed": "#2f1400",
+                "surface-dim": "#dbdad9",
+                "surface": "#fbf9f9",
+                "on-secondary": "#ffffff",
+                "on-background": "#1b1c1c",
+                "surface-variant": "#e3e2e2",
+                "outline-variant": "#c0c7d4",
+                "on-error-container": "#93000a",
+                "inverse-on-surface": "#f2f0f0",
+                "surface-container-highest": "#e3e2e2",
+                "primary-fixed": "#d3e4ff",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed": "#001c38",
+                "on-secondary-container": "#003567",
+                "inverse-primary": "#a2c9ff",
+                "primary": "#005ea4",
+                "on-primary": "#ffffff",
+                "error": "#ba1a1a",
+                "error-container": "#ffdad6",
+                "on-secondary-fixed": "#001c3a",
+                "on-primary-container": "#fdfcff",
+                "surface-container-lowest": "#ffffff",
+                "inverse-surface": "#303031",
+                "surface-container-low": "#f5f3f3",
+                "primary-container": "#0077ce",
+                "on-surface": "#1b1c1c",
+                "primary-fixed-dim": "#a2c9ff",
+                "outline": "#707783",
+                "on-tertiary-container": "#fffbff",
+                "secondary-fixed": "#d4e3ff",
+                "tertiary-fixed-dim": "#ffb780",
+                "tertiary-fixed": "#ffdcc4",
+                "secondary-fixed-dim": "#a5c8ff",
+                "surface-container": "#efeded",
+                "on-error": "#ffffff",
+                "secondary": "#005faf",
+                "surface-tint": "#0060a8",
+                "secondary-container": "#54a0fe",
+                "on-secondary-fixed-variant": "#004786",
+                "surface-container-high": "#e9e8e7",
+                "background": "#fbf9f9",
+                "on-primary-fixed-variant": "#004881",
+                "tertiary-container": "#b35e00",
+                "surface-bright": "#fbf9f9",
+                "on-tertiary-fixed-variant": "#6f3800",
+                "on-surface-variant": "#404752",
+                "tertiary": "#8f4a00"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-mobile": "16px",
+                "xs": "4px",
+                "xl": "32px",
+                "sm": "8px",
+                "md": "16px",
+                "lg": "24px",
+                "gutter": "16px"
+            },
+            "fontFamily": {
+                "headline-sm": ["Inter"],
+                "body-lg": ["Inter"],
+                "headline-md": ["Inter"],
+                "label-sm": ["Inter"],
+                "label-md": ["Inter"],
+                "display-lg": ["Inter"],
+                "body-md": ["Inter"]
+            },
+            "fontSize": {
+                "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "500"}],
+                "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant flex justify-between items-center px-margin-mobile h-12">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="sports_esports">sports_esports</span>
+<h1 class="font-headline-sm text-headline-sm text-primary">Tournaments</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="search">search</span>
+</button>
+<button class="active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-12 pb-20">
+<!-- Filter Tabs -->
+<div class="bg-surface sticky top-12 z-40 px-margin-mobile py-4 overflow-x-auto no-scrollbar flex items-center gap-3 border-b border-surface-container">
+<button class="px-4 py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md transition-colors">
+                All
+            </button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+                Live
+            </button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+                Upcoming
+            </button>
+<button class="px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+                Completed
+            </button>
+</div>
+<!-- Tournament Content -->
+<section class="px-margin-mobile mt-4 flex flex-col gap-4">
+<!-- Live Tournament Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-sm transition-all hover:shadow-md">
+<div class="relative h-48 w-full bg-surface-dim">
+<img alt="Valorant Champions" class="w-full h-full object-cover" data-alt="A professional eSports arena stage with vibrant blue and purple stage lighting, featuring high-end gaming setups and massive digital screens. The atmosphere is intense and high-production, capturing a professional Valorant tournament environment. The clean architectural lines and bright lighting maintain a sophisticated, athletic corporate aesthetic suitable for a premium gaming application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCphhkG6x7q32tca1mMF3TriXxJauDGrRrguVZMBzGI9gOwsx-bGYOVl8a10NCI0kuhAkGAdj17FEwAMioEc0zhANYZjUP1lad7yM7W6-0HwoX97r4Et-cloj-wffIE2_GdjbyW0IEouzpJP6rjxTBJI4h2u65r5sT4x9ok4TWkm1qYC5wCx0KwjnFHu8GsjesYD4zhVCuP5tIpj837WlZbpNpJsVcNF08FSuTrPZG1o9tY3FL8rQ5deIyVFGiyRnpGI2GxGKlkKDwm"/>
+<div class="absolute top-4 left-4 bg-error px-2 py-1 rounded flex items-center gap-1.5 shadow-lg">
+<span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">Live</span>
+</div>
+</div>
+<div class="p-md flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Valorant Champions Tour: Stage 2</h2>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-1 rounded">24/64 Teams</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="calendar_today">calendar_today</span>
+<p class="font-body-md text-body-md">Started Oct 12, 10:00 AM</p>
+</div>
+<div class="mt-2 flex items-center justify-between gap-4">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional gamer profile headshot with soft studio lighting against a neutral grey background. The style is clean and professional, focusing on the persona as a serious athlete rather than a casual player. The lighting is crisp and the composition is centered for a high-quality UI asset." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlgCIbVdI2kNAsDvE9Sey2YnXZJl92Vhwmr9IOxerol6IMVygs1DWocZUGienHBdDbkHHwaaAt4MDv3WkIeCUuuyENASAtAc183bG_eJowFT7wc7HTTesgpaKluzvEQTq4xn_beu-VTDbjBqFCIwk8mEwVL7TX8ztS064PAb-GrtUG5gdc77a9zdGb6Is1mkgTcjAS62rHYfVZ-kYgL5h8mO-VoYQDdjLAElnVJBn7RPVSpHfmBnjTrTDCHfMuzAYYAHT-zlg_1Axx"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-surface-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close-up studio portrait of a young professional competitor wearing a sleek athletic team jersey. The lighting is bright and modern, creating a clean light-mode look. The subject has a confident expression, emphasizing the professional and serious tone of the eSports platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3FYjB_7A70pWe_Up-HbhL2DZaSO2CakAFr9rfuTXQrROzS61LEen5gSFjcaSZe2s_OUbXuu3F9zb-3gdcCHb214ceMQLQqdAx8IF_flKr1AfQ6oQgmZ6PxzCnIVy0uaNrzqyd6Zoc3e9CjXVVJcdCEAW_CZL6ZLlcdpOQBJasAZOmuCjwc7fpvtB4fCmlDjREs0YfTuo6WcEN8m4NGN6_gFIpNSfwKeh62OzD_z21HQAzb_2mRl3rKfBVOO62QyzmBku--YzYxkjd"/>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-primary text-white flex items-center justify-center font-label-sm text-label-sm">
+                                +12
+                            </div>
+</div>
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md h-10 px-6 rounded-lg active:scale-95 transition-all shadow-sm">
+                            Join Now
+                        </button>
+</div>
+</div>
+</article>
+<!-- Upcoming Tournament Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-sm transition-all hover:shadow-md">
+<div class="relative h-48 w-full bg-surface-dim">
+<img alt="Apex Legends Global Series" class="w-full h-full object-cover" data-alt="A sleek corporate eSports broadcast studio with high-tech equipment and minimalist desks. The scene is bathed in soft blue and white ambient lighting, reflecting a professional athletic broadcast environment. The aesthetic is clean, modern, and focuses on the structural integrity of a major sporting event production without any flashy neon elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK7ncXYvhV9oFyH-tMLpLjkIBueubVXc3clW-wYI5uopMau76d7Kux52Dxp4MpzUTWtjDi799lBOjTU-zLb_jmXmP6al5kKWlyGUyQN7lRs9Rij15wrwHw5Ta_lumawkpsU-ODRFWxGoZWFTXx4UWwHGcchaEEYJHy5LBulVhAeYzkJV4nV22L8WsPVxdp4_6rlQsdB69IjFa9BV6zuzc0HOKDQmECQ8rrVpS3mxHYCBSIj7KoQJAHN60wiqyXoM1a1k9w6kNWM5r6"/>
+<div class="absolute top-4 left-4 bg-primary px-2 py-1 rounded flex items-center gap-1.5 shadow-lg">
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">Upcoming</span>
+</div>
+</div>
+<div class="p-md flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Apex Legends Global Series</h2>
+<span class="bg-surface-container-high text-primary font-label-sm text-label-sm px-2 py-1 rounded">$10,000 Prize</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="schedule">schedule</span>
+<p class="font-body-md text-body-md">Starts Oct 15, 08:00 PM</p>
+</div>
+<div class="mt-2 flex items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline" data-icon="groups">groups</span>
+<span class="font-body-md text-body-md text-on-surface-variant">42 Registered</span>
+</div>
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md h-10 px-6 rounded-lg active:scale-95 transition-all shadow-sm">
+                            Register
+                        </button>
+</div>
+</div>
+</article>
+<!-- Completed Tournament Card -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-sm transition-all hover:shadow-md opacity-90">
+<div class="relative h-48 w-full bg-surface-dim grayscale-[0.3]">
+<img alt="CS:GO Invitational" class="w-full h-full object-cover" data-alt="A wide-angle shot of a minimalist tournament hall with clean white benches and a central gaming podium. The lighting is bright and even, emphasizing a professional corporate sport environment. The color palette is strictly blue, white, and grey, conveying a premium and trustworthy athletic organization vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoGV5M4o10_gUGt5LMmTAKkgV5zk-5cx_fAsj3Wp-VSH34eEYLvkRSnzP1-vO_Dpi3RCtJGYk7aXqbH8QqFAUpMrrLHqIiRcsEkn6tp47vglXs_ZBjHCPNJJuaC4Vk9lRMnegsVlqDIy0Avp9Mrz6-pENEda_ztGCYjPHEoheyUiDTDrdPgceNhwxEUOfSyaGQzLVw586R2feuurg64-BnKq3UGuPYYtro1BMaaYOp7KItjQy69ryQ1U5bXCs2YRu0a1XzGBImVUBs"/>
+<div class="absolute top-4 left-4 bg-outline px-2 py-1 rounded flex items-center gap-1.5 shadow-lg">
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">Completed</span>
+</div>
+</div>
+<div class="p-md flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">CS:GO Autumn Invitational</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-1 rounded">Finals</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]" data-icon="event_available">event_available</span>
+<p class="font-body-md text-body-md">Ended Oct 10</p>
+</div>
+<div class="mt-2 flex items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-body-md text-body-md text-primary font-semibold">Winner: Team Liquid</span>
+</div>
+<button class="flex-1 bg-surface-container-high text-on-surface-variant font-label-md text-label-md h-10 px-6 rounded-lg active:scale-95 transition-all">
+                            View Results
+                        </button>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface border-t border-outline-variant shadow-sm flex justify-around items-center h-16 px-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim font-bold active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="emoji_events" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+<span class="font-label-sm text-label-sm mt-1">Tournaments</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label-sm text-label-sm mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="live_tv">live_tv</span>
+<span class="font-label-sm text-label-sm mt-1">Live</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm mt-1">Profile</span>
+</a>
+</nav>
+</body></html>
